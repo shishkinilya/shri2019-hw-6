@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/styles.scss">
+</head>
+<body class="page theme">
+<header class="header page__header">
+    <div class="header__inner page__container">
+        <a class="header__logo" href="#">
+            <svg width="118" height="20">
+                <use href="../../assets/logo.svg"/>
+            </svg>
+        </a>
+        <div class="dropdown header__dropdown">
+            <button class="with-icon text text_size_s text_line-height_s with-icon_align_center with-icon_gap_sm dropdown__trigger dropdown__trigger_has_border">
+                <span class="dropdown__trigger-text">Repository Arc</span>
+                <svg class="with-icon__icon dropdown__icon with-icon__icon_position_right" width="16" height="16">
+                    <use href="../../assets/icons/dropdown-arrow.svg" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page__container">
+    <ul class="breadcrumbs page__breadcrumbs">
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current">arcadia</span></li>
+    </ul>
+
+    <div class="page-heading text text_weight_normal">
+        <h1 class="text text_type_h1 text_size_xl text_weight_normal">arcadia</h1>
+        <div class="dropdown page-heading__append">
+            <button class="with-icon text with-icon_align_center with-icon_gap_md text_color_secondary dropdown__trigger" type="button">
+                <span class="text text_size_xl">trunk</span>
+                <svg class="dropdown__icon with-icon__icon with-icon__icon_position_right" width="12" height="12">
+                    <use href="../../assets/icons/dropdown-arrow.svg"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="page__subheading">
+            <span class="text text_size_s text_line-height_m">
+                Last commit <a class="link" href="#">c4d248</a>
+                on <a class="link" href="#">20 Oct 2017, 12:24</a>
+                by <span class="username">robot-srch-releaser</span>
+            </span>
+    </div>
+
+    <div class="tabs">
+        <ul class="tabs__tab-list">
+            <li class="tabs__tab"><a class="tabs__tab-link" href="#">files</a></li>
+            <li class="tabs__tab"><a class="tabs__tab-link tabs__tab-link_active" href="#">branches</a></li>
+        </ul>
+    </div>
+
+    <table class="table branches-table text text_size_s text_line-height_m">
+        <thead class="table__header">
+        <tr class="table__row table__row_border_bottom table__row_border_dark">
+            <th class="text text_weight_normal text_align_left text_color_secondary-light table__th">Name</th>
+            <th class="text text_weight_normal text_align_right text_color_secondary-light table__th">Commit hash</th>
+        </tr>
+        </thead>
+        <tbody class="table__body">
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    trunk
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">6748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-2
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">7748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-3
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">8748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-5
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">9748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-6
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">1748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-7
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">2748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-8
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">3748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-9
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">4748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-10
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">5748ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-11
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">4548ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_bottom table__row_border_light branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-12
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">3248ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        <tr class="table__row table__row_border_none branches-table__row">
+            <td class="branches-table__branch-name">
+                <span class="with-icon with-icon_gap_md with-icon_align_center">
+                    <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                        <use href="../../assets/icons/branch.svg"/>
+                    </svg>
+                    users/a-aidyn00/my-feature-13
+                </span>
+            </td>
+            <td class="branches-table__hash"><a class="link" href="#">1348ds893432438dsd823329d923482d</a></td>
+            <td class="branches-table__arrow">
+                <a href="#">
+                    <svg width="10" height="19">
+                        <use href="../../assets/icons/navigate-arrow.svg" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer class="footer page__footer">
+    <div class="footer__company">Trade secrets of Yandex LLC. 16, Lev Tolstoy Str., Moscow, Russia, 119021</div>
+    <div class="footer__stats">
+        <span class="footer__version">UI: 0.1.15</span>
+        <span class="footer__copyright">&copy; 2007—2019 <a class="link" href="#">Yandex</a></span>
+    </div>
+</footer>
+</body>
+</html>

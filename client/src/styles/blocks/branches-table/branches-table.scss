@@ -1,0 +1,45 @@
+.branches-table {
+
+  &__row {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  &__branch-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding-top: 12px;
+    padding-bottom: 4px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__hash {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding-top: 4px;
+    padding-bottom: 12px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      text-align: right;
+    }
+  }
+
+  &__arrow {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+
+    @include breakpoint($screen-lg) {
+      display: none;
+    }
+
+    svg {
+      fill: #e5e5e5;
+    }
+  }
+}

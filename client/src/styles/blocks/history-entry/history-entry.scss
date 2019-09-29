@@ -1,0 +1,14 @@
+.history-entry {
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: var(--gray-7);
+  }
+
+  &__commit-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}

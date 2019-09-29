@@ -1,0 +1,9 @@
+.overflow-container {
+  &_xs {
+    overflow: auto;
+
+    @include breakpoint($screen-lg) {
+      overflow: visible;
+    }
+  }
+}

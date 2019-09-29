@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/styles.scss">
+</head>
+<body class="page theme">
+<header class="header page__header">
+    <div class="header__inner page__container">
+        <a class="header__logo" href="#">
+            <svg width="118" height="20">
+                <use href="../../assets/logo.svg"/>
+            </svg>
+        </a>
+        <div class="dropdown header__dropdown">
+            <button class="with-icon text text_size_s text_line-height_s with-icon_align_center with-icon_gap_sm dropdown__trigger dropdown__trigger_has_border">
+                <span class="dropdown__trigger-text">Repository Arc</span>
+                <svg class="with-icon__icon dropdown__icon with-icon__icon_position_right" width="16" height="16">
+                    <use href="../../assets/icons/dropdown-arrow.svg" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page__main page__container">
+    <ul class="breadcrumbs page__breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">root</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">trunk</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">arcadia</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">addapter</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current">ya.make</span></li>
+    </ul>
+
+    <div class="page-heading text text_weight_normal">
+        <h1 class="text text_type_h1 text_size_xl text_weight_normal">arcadia</h1>
+        <div class="dropdown page-heading__append">
+            <button class="with-icon text with-icon_gap_md with-icon_align_center text_color_secondary dropdown__trigger" type="button">
+                <span class="text text_size_xl">trunk</span>
+                <svg class="dropdown__icon with-icon__icon with-icon__icon_position_right" width="12" height="12">
+                    <use href="../../assets/icons/dropdown-arrow.svg"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="page__subheading">
+        <span class="text text_size_s text_line-height_m">
+            Last commit <a class="link" href="#">l32s23</a>
+            on <a class="link" href="#">20 Oct 2017, 12:24</a>
+            by <span class="username">robot-srch-releaser</span>
+        </span>
+    </div>
+
+    <div class="tabs">
+        <ul class="tabs__tab-list">
+            <li class="tabs__tab"><a class="tabs__tab-link tabs__tab-link_active" href="#">details</a></li>
+            <li class="tabs__tab"><a class="tabs__tab-link" href="#">history</a></li>
+        </ul>
+    </div>
+
+    <div class="code-viewer page__streched page__streched_xs">
+        <div class="code-viewer__header">
+            <div class="with-icon with-icon_gap_lg">
+                <svg class="with-icon__icon with-icon__icon_position_left" width="9" height="20">
+                    <use href="../../assets/icons/file-code.svg" />
+                </svg>
+                <span class="text text_line-height_m">
+                    <span class="text text_size_s">ya.make</span>
+                    <span class="text text_size_xs code-viewer__file-size">(4 347 bytes)</span>
+                </span>
+            </div>
+            <div class="code-viewer__header-aside">
+                <a class="code-viewer__download" href="#">
+                    <svg width="14" height="13">
+                        <use href="../../assets/icons/download.svg" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="overflow-container overflow-container_xs code-viewer__body">
+            <table class="code-view text code-view_lang_python text_size_xxs text_line-height_m">
+                <tbody>
+                <tr>
+                    <td class="code-view__line-number">1</td>
+                    <td class="code-view__code"><span class="token token_type_comment">#!/usr/bin/env python</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">2</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">import</span> <span class="token token_type_plain">os</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">3</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">import</span> <span class="token token_type_plain">sys</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">4</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">import</span> <span class="token token_type_plain">platform</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">5</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">import</span> <span class="token token_type_plain">json</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">6</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">7</td>
+                    <td class="code-view__code"><span class="token token_type_plain">URLS = [</span><span class="token token_type_string">'https://proxy.sandbox.yandex-team.ru/453818264'</span><span class="token token_type_plain">,</span><span class="token token_type_string">'http://storage-int.mds.yandex.net/get-sandbox/110738/by_platform.json.453815347'</span><span class="token token_type_plain">]</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">8</td>
+                    <td class="code-view__code"><span class="token token_type_plain">MD5 = '7f5a85f9c28d35c3a76d8cea7af51106'</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">9</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">10</td>
+                    <td class="code-view__code"><span class="token token_type_plain">RETRIES = 5</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">11</td>
+                    <td class="code-view__code"><span class="token token_type_plain">HASH_PREFIX = 10</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">12</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">13</td>
+                    <td class="code-view__code"><span class="token token_type_plain">HOME_DIR = os.path.expanduser('~')</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">14</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">15</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">16</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">def</span> <span class="token token_type_identifier">create_dirs</span><span class="token token_type_plain">(path):</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">17</td>
+                    <td class="code-view__code">    <span class="token token_type_keyword">try</span><span class="token token_type_plain">:</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">18</td>
+                    <td class="code-view__code">        <span class="token token_type_plain">os.makedirs(path)</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">19</td>
+                    <td class="code-view__code">    <span class="token token_type_keyword">except</span> OSError <span class="token token_type_keyword">as</span> e:</td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">20</td>
+                    <td class="code-view__code">        <span class="token token_type_identifier">import</span> errno</td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">21</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">22</td>
+                    <td class="code-view__code">        <span class="token token_type_keyword">if</span> e.errno != errno.EEXIST:</td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">23</td>
+                    <td class="code-view__code">            <span class="token token_type_keyword">raise</span></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">24</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">25</td>
+                    <td class="code-view__code">    <span class="token token_type_keyword">return</span> path</td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">26</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">27</td>
+                    <td class="code-view__code"></td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">28</td>
+                    <td class="code-view__code"><span class="token token_type_keyword">def</span> <span class="token token_type_identifier">misc_root</span>():</td>
+                </tr>
+                <tr>
+                    <td class="code-view__line-number">29</td>
+                    <td class="code-view__code">    <span class="token token_type_keyword">return</span> create_dirs(os.getenv(<span class="token token_type_string">'YA_CACHE_DIR'</span>) <span class="token token_type_keyword">or</span> os.path.join(HOME_DIR, <span class="token token_type_string">'.ya'</span>))</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer page__footer">
+    <div class="footer__company">Trade secrets of Yandex LLC. 16, Lev Tolstoy Str., Moscow, Russia, 119021</div>
+    <div class="footer__stats">
+        <span class="footer__version">UI: 0.1.15</span>
+        <span class="footer__copyright">&copy; 2007—2019 <a class="link" href="#">Yandex</a></span>
+    </div>
+</footer>
+</body>
+</html>

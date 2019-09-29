@@ -1,0 +1,119 @@
+.commit {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40px;
+    flex-shrink: 0;
+  }
+
+  &__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-bottom: 12px;
+  }
+
+  &__icon-container {
+    position: relative;
+    margin-bottom: 2px;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: var(--lightblue-1);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--accent-icon-color);
+  }
+
+  &__connector {
+    width: 2px;
+    height: 100%;
+    min-height: 32px;
+    align-self: center;
+    border-radius: 10px;
+    background-color: var(--gray-6);
+  }
+
+  &__message {
+    margin-top: 0;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    flex-basis: calc(100% - 20px);
+    order: 1;
+    font-weight: 500;
+
+    @include breakpoint($screen-lg) {
+      flex-basis: auto;
+      order: 1;
+    }
+  }
+
+  &__subject {
+    margin-top: 0;
+    margin-bottom: 4px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    order: 3;
+
+    @include breakpoint($screen-lg) {
+      order: 4;
+    }
+  }
+
+  &__repo-state-link {
+    order: 2;
+
+    @include breakpoint($screen-lg) {
+      order: 3;
+    }
+  }
+
+  &__hash {
+    display: none;
+
+    @include breakpoint($screen-lg) {
+      display: block;
+      order: 2;
+      margin-right: 230px;
+      margin-left: auto;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    order: 4;
+
+    @include breakpoint($screen-lg) {
+      order: 5;
+    }
+  }
+
+  &__author {
+    margin-left: 8px;
+    color: var(--gray-9);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    justify-content: space-between;
+    flex-basis: percentage(287 / 1376);
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+
+  &__repo-state-icon {
+    fill: var(--gray-7);
+  }
+}

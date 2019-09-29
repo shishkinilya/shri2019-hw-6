@@ -1,0 +1,90 @@
+.files-table {
+  &__row {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__file {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  &__arrow {
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+
+    @include breakpoint($screen-lg) {
+      display: none;
+    }
+
+    svg {
+      fill: #e5e5e5;
+    }
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    padding-bottom: 4px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__message {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__hash {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    padding-top: 4px;
+    padding-bottom: 12px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__author {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    padding-top: 4px;
+    padding-bottom: 12px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__updated {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    padding-top: 4px;
+    padding-bottom: 12px;
+
+    @include breakpoint($screen-lg) {
+      padding-top: 16px;
+      padding-bottom: 12px;
+      text-align: right;
+    }
+  }
+
+}

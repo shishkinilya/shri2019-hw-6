@@ -1,0 +1,49 @@
+.token {
+  white-space: pre;
+
+  .code-view_lang_python & {
+    &_type_keyword {
+      color: #00234b;
+      font-weight: 600;
+    }
+
+    &_type_plain {
+      color: #00234b;
+    }
+
+    &_type_comment {
+      color: #8694a2;
+    }
+
+    &_type_string {
+      color: #005fba;
+    }
+
+    &_type_identifier {
+      color: #2778c5;
+      font-weight: 600;
+    }
+  }
+
+  .code-view_lang_java & {
+    &_type_keyword {
+      color: #0433ff;
+    }
+
+    &_type_plain {
+      color: #000;
+    }
+
+    &_type_comment {
+      color: #008f00;
+    }
+
+    &_type_string {
+      color: #005fba;
+    }
+
+    &_type_identifier {
+      color: #b4261a;
+    }
+  }
+}

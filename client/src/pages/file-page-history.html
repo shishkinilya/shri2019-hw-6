@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../styles/styles.scss">
+</head>
+<body class="page theme">
+<header class="header page__header">
+    <div class="header__inner page__container">
+        <a class="header__logo" href="#">
+            <svg width="118" height="20">
+                <use href="../../assets/logo.svg"/>
+            </svg>
+        </a>
+        <div class="dropdown header__dropdown">
+            <button class="with-icon text text_size_s text_line-height_s with-icon_align_center with-icon_gap_sm dropdown__trigger dropdown__trigger_has_border">
+                <span class="dropdown__trigger-text">Repository Arc</span>
+                <svg class="with-icon__icon dropdown__icon with-icon__icon_position_right" width="16" height="16">
+                    <use href="../../assets/icons/dropdown-arrow.svg" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page__container">
+    <ul class="breadcrumbs page__breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">root</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">trunk</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">arcadia</a></li>
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">addapter</a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__current">ya.make</span></li>
+    </ul>
+
+    <div class="page-heading text text_weight_normal">
+        <h1 class="text text_type_h1 text_size_xl text_weight_normal">arcadia</h1>
+        <div class="dropdown page-heading__append">
+            <button class="with-icon text with-icon_gap_md with-icon_align_center text_color_secondary dropdown__trigger" type="button">
+                <span class="text text_size_xl">trunk</span>
+                <svg class="dropdown__icon with-icon__icon with-icon__icon_position_right" width="12" height="12">
+                    <use href="../../assets/icons/dropdown-arrow.svg"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="page__subheading">
+        <span class="text text_size_s text_line-height_m">
+            Last commit <a class="link" href="#">l32s23</a>
+            on <a class="link" href="#">20 Oct 2017, 12:24</a>
+            by <span class="username">robot-srch-releaser</span>
+        </span>
+    </div>
+
+    <div class="tabs">
+        <ul class="tabs__tab-list">
+            <li class="tabs__tab"><a class="tabs__tab-link" href="#">details</a></li>
+            <li class="tabs__tab"><a class="tabs__tab-link tabs__tab-link_active" href="#">history</a></li>
+        </ul>
+    </div>
+
+    <div class="history">
+        <div class="history-entry">
+            <h3 class="text text_size_m text_line-height_m history-entry__title">Today</h3>
+            <ul class="history-entry__commit-list commit-list">
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                        <span class="commit__connector"></span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Support new distbuild protocol</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень качественно написаны некоторые функции. Предлагаю исправить это недоразумение.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">woodcutter</span>, 4 s ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                        <span class="commit__connector"></span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Force executing on MULTISLOT hosts by declaring Caches</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень правильно с точки зрения ООП написаны некоторые функции. Предлагаю исправить это.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">rudskoy</span>, 1 min ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Fixed run_diff_test in the realm</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень качественно написаны некоторые функции. Предлагаю исправить это недоразумение.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">annaveronika</span>at 16:25</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="history-entry">
+            <h3 class="text text_size_m text_line-height_m history-entry__title">Yesterday</h3>
+            <ul class="history-entry__commit-list commit-list">
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                        <span class="commit__connector"></span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Support new distbuild protocol</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень качественно написаны некоторые функции. Предлагаю исправить это недоразумение.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">woodcutter</span>, 4 s ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                        <span class="commit__connector"></span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Force executing on MULTISLOT hosts by declaring Caches</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень правильно с точки зрения ООП написаны некоторые функции. Предлагаю исправить это.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">rudskoy</span>, 1 min ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="commit with-icon with-icon_gap_lg commit-list__item">
+                    <div class="commit__icons with-icon__icon with-icon__icon_position_left">
+                        <span class="commit__icon-container">
+                            <svg class="commit__icon" width="16" height="16">
+                                <use href="../../assets/icons/chain.svg" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="commit__info-container">
+                        <h3 class="text text_size_s text_line-height_s commit__message">Fixed run_diff_test in the realm</h3>
+                        <a class="commit__repo-state-link" href="#">
+                            <svg class="commit__repo-state-icon" width="16" height="20">
+                                <use href="../../assets/icons/code.svg" />
+                            </svg>
+                        </a>
+                        <p class="text text_size_xs text_line-height_s commit__subject">
+                            Не очень качественно написаны некоторые функции. Предлагаю исправить это недоразумение.
+                        </p>
+                        <a class="link text text_size_xs text_line-height_s commit__hash" href="#">s324e8</a>
+                        <div class="text text_size_xs text_line-height_m commit__meta">
+                            <a class="link" href="#">s324e8</a>
+                            <span class="commit__author">by <span class="username">annaveronika</span>at 16:25</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer class="footer page__footer">
+    <div class="footer__company">Trade secrets of Yandex LLC. 16, Lev Tolstoy Str., Moscow, Russia, 119021</div>
+    <div class="footer__stats">
+        <span class="footer__version">UI: 0.1.15</span>
+        <span class="footer__copyright">&copy; 2007—2019 <a class="link" href="#">Yandex</a></span>
+    </div>
+</footer>
+</body>
+</html>

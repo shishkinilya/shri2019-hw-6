@@ -1,0 +1,47 @@
+.code-viewer {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--gray-4);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    background-color: var(--gray-2);
+  }
+
+  &__header-aside {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__file-size {
+    color: #999999;
+  }
+
+  &__download {
+    display: inline-flex;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--gray-5);
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-right: 11px;
+    padding-bottom: 6px;
+    padding-left: 11px;
+  }
+
+  &__body {
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: var(--gray-4);
+  }
+}
