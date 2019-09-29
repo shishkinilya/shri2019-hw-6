@@ -9,10 +9,14 @@ const filesTableEl = document.querySelector('#id-file-list');
 const initialState = {
   query: '',
   status: LOADING_STATUSES.SUCCESS,
-  initialList: [{name: 'foo'}, {name: 'bar'}, {name: 'baz'}],
-  filteredList: [{name: 'foo'}, {name: 'bar'}, {name: 'baz'}],
+  initialList: [],
+  filteredList: [],
 };
 
 const store = new Store(filesReducer, initialState);
 new FileSearchView(filesSearchFieldEl, store);
 new FilesTableView(filesTableEl, store);
+
+fetch('http://localhost:3000/api/repos')
+  .then(response => response.json())
+  .then(value => console.log(value));

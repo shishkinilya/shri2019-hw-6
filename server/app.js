@@ -2,6 +2,7 @@ const express = require('express');
 const argv = require('yargs').argv;
 const path = require('path');
 const mime = require('mime-types');
+const cors = require('cors');
 
 const gitService = require('./git.service');
 
@@ -9,6 +10,7 @@ const app = express();
 const dirPath = argv.path;
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/api/repos', async (req, res) => {
   try {

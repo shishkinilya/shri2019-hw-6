@@ -1,4 +1,5 @@
 import View from './../lib/reducto/View';
+import directory from './../../../assets/icons/directory.svg';
 
 export default class FilesTableView extends View {
   constructor(el, store) {
@@ -17,7 +18,7 @@ export default class FilesTableView extends View {
         <td class="files-table__name">
           <span class="with-icon with-icon_gap_md with-icon_align_center">
             <svg class="with-icon__icon with-icon__icon_position_left" width="12" height="20">
-              <use href="../../assets/icons/directory.svg"/>
+              <use xlink:href="${directory}" />
             </svg>
             ${file.name}
           </span>
