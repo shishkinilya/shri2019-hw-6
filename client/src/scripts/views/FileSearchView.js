@@ -5,26 +5,25 @@ export default class FileSearchView extends View {
   constructor(el, store) {
     super(el, store);
     this._onInput = this._onInput.bind(this);
-    this._el.addEventListener('change', this._onInput);
+
+    el.addEventListener('keyup', this._onInput);
   }
 
-  render() {
-    return `<input type="search">`;
+  render(state) {
+    this._el.value = state.query;
   }
 
   destroy() {
     super.destroy();
-    this._el.removeEventListener('change', this._onInput);
+    this._el.removeEventListener('keyup', this._onInput);
   }
 
   _onInput(event) {
-    const { value: query } = event.target;
-
-    if (query.trim()) {
+    if (event.target.value.trim()) {
       this._store.dispatch({
         type: FILES_ACTIONS.FIND_FILES,
         payload: {
-          query,
+          query: event.target.value,
         },
       });
     }
