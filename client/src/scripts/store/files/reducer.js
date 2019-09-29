@@ -6,8 +6,6 @@ const reducer = (state, action) => {
     case FILES_ACTIONS.GET_FILES:
       return {
         ...state,
-        initialList: [],
-        filteredList: [],
         status: LOADING_STATUSES.LOADING
       };
 
@@ -15,7 +13,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         initialList: action.payload.list,
-        filteredList: [],
+        filteredList: action.payload.list,
         status: LOADING_STATUSES.SUCCESS
       };
 
@@ -28,18 +26,22 @@ const reducer = (state, action) => {
       };
 
     case FILES_ACTIONS.FIND_FILES:
+      if (action.payload.query) {
+        return {
+          ...state,
+          query: action.payload.query,
+          filteredList: state.initialList.filter(file => file.name.includes(action.payload.query))
+        };
+      }
       return {
         ...state,
         query: action.payload.query,
-        filteredList: state.initialList.filter(file => file.name.includes(action.payload.query))
+        filteredList: state.initialList.slice(),
       };
 
     default:
       return {
         ...state,
-        initialList: [],
-        filteredList: [],
-        status: LOADING_STATUSES.SUCCESS
       }
   }
 };
