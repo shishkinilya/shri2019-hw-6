@@ -18,6 +18,6 @@ export default class View {
   }
 
   _prepareRender(state) {
-    this._el._innerHTML = this.render(state);
+    this._el.innerHTML = this.render(state);
   }
 }

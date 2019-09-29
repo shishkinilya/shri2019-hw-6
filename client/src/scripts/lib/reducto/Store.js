@@ -1,6 +1,5 @@
 class Store {
   constructor(reducer, initialState) {
-    console.log(reducer);
     this._reducer = reducer;
     this._state = initialState;
     this._listeners = [];
@@ -24,6 +23,7 @@ class Store {
   }
 
   dispatch(action) {
+    console.log(action);
     this._state = this._reducer(this._state, action);
     this._notifyListeners();
   }

@@ -21,7 +21,12 @@ export default class FileSearchView extends View {
     const { value: query } = event.target;
 
     if (query.trim()) {
-      this._store.dispatch(FILES_ACTIONS.FIND_FILES(query));
+      this._store.dispatch({
+        type: FILES_ACTIONS.FIND_FILES,
+        payload: {
+          query,
+        },
+      });
     }
   }
 }

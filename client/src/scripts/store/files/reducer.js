@@ -20,7 +20,7 @@ const reducer = (state, action) => {
         ...state,
         ...{
           files: {
-            initialList: action.list,
+            initialList: action.payload.list,
             filteredList: [],
             status: LOADING_STATUSES.SUCCESS
           }
@@ -44,7 +44,7 @@ const reducer = (state, action) => {
         ...state,
         ...{
           files: {
-            filteredList: state.files.initialList.filter(file => file.name.includes(action.query))
+            filteredList: state.files.initialList.filter(file => file.name.includes(action.payload.query))
           }
         }
       };
